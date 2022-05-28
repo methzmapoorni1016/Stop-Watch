@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".WatchActivity">
+
+
+    <ImageView
+        android:id="@+id/bgcircle"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:layout_alignBottom="@+id/icanchor"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="51dp"
+        android:src="@drawable/bgcircle"
+        tools:ignore="MissingConstraints"
+
+    />
+
+    <ImageView
+        android:id="@+id/icanchor"
+        android:layout_width="358dp"
+        android:layout_height="347dp"
+        android:layout_above="@+id/timerHere"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="81dp"
+        android:src="@drawable/icanchor"
+        />
+
+    <Chronometer
+        android:id="@+id/timerHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="191dp"
+        android:textSize="62sp"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:background="@drawable/buttoget"
+        android:textAllCaps="false"
+        android:text="Start Now"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btnred"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="Finish Task"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="570dp"
+        />
+
+
+</RelativeLayout>
